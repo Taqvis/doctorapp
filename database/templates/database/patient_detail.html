@@ -92,10 +92,11 @@
 			<div class="shadow p-3 mb-5 bg-body rounded">
 				<h1>{{ object.name }}</h1>
 				<br><br>
-				<h4>Date of birth: {{ object.DOB }}</h4>
+				<h4>Date of birth: {{ object.DOB|date:"F d, Y" }}</h4>
 				<h4>Sex: {{ object.sex }}</h4>
 				<h4>Blood pressure: {{ object.blood_pressure }}</h4>
 				<h4>Risk factor: {{ object.risk_factor }}</h4>
+				<h4>Time Stamp: {{ object.DOB|time }}</h4>
 				<br>
 				<h4>Additional info:</h4>
 
