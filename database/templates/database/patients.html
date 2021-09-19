@@ -97,7 +97,7 @@
 					<div class="card h-100">
 						<div class="card-body">
 							<a href="{% url 'patient-detail' patient.id %}" class="link-p"><h5 class="card-title">{{ patient.name }}</h5></a>
-							<p class="card-text">Date of birth: {{ patient.DOB }} <br>Sex: {{ patient.sex }} <br>Blood pressure: {{ patient.blood_pressure }}<br> Risk factor: {{ patient.risk_factor }} </p>
+							<p class="card-text">Date of birth: {{ patient.DOB|date:"F d, Y" }} <br>Sex: {{ patient.sex }} <br>Blood pressure: {{ patient.blood_pressure }}<br> Risk factor: {{ patient.risk_factor }} <br>Time Stamp: {{ patient.DOB|time }} </p>
 						</div>
 						<div class="card-footer">
 							<small class="text-muted">Last updated 3 mins ago</small>
